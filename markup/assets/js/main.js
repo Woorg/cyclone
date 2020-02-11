@@ -167,7 +167,6 @@ import Tabby from 'tabbyjs';
       'implemented',
       'support'
 
-
     ]);
 
 
