@@ -28,12 +28,11 @@
     + .nav__list
 
       padding-top: 50px
-      width: 100vw
-      height: 100vh
       background: $blue
       text-align: center
+      opacity: 1
       transform: translateX(0%)
-      +tr(transform .3s ease)
+      +tr(transform opacity .2s ease)
 
       +mq($small)
         padding-top: 50px
@@ -57,14 +56,20 @@
     // right: 0
     top: calc(100% - 2px)
     right: 0
+    width: 100vw
+    height: 100vh
     // display: none
     align-items: flex-start
+    opacity: 0
     transform: translateX(100%)
-    +tr(transform .3s ease)
+    +tr(opacity .3s ease)
     +mq($mlarge)
       position: static
       display: flex
       transform: none
+      width: auto
+      height: auto
+      opacity: 1
 
     // flex-wrap: nowrap
   // &__item

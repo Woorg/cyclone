@@ -15,3 +15,32 @@ mixin hero-functions(data)
       .hero__w
         h1.hero__title.title Функции
         .hero__text Области применения платформы «Циклон» очень обширны. Они включают в себя различные сферы от энергетики и инфраструктуры до управленческой деятельности, обеспечения безопасности и управления недвижимостью.
+
+mixin hero-capabilities(data)
+  section.hero.lazy(data-bg="url('assets/images/general/waves.png')")
+    .hero__container.container.flex.flex_bottom
+      .hero__image
+        img(src="assets/images/content/hero-capabilities-img.png", alt="")
+      .hero__w
+        h1.hero__title.title Возможности
+        .hero__text Полный контроль имущественного комплекса, повышение эффективности капитальных вложений, сокращение времени на работу с данными, легкая интеграция и замещение зарубежных ГИС.
+
+
+mixin hero-implemented(data)
+  section.hero.lazy(data-bg="url('assets/images/general/waves.png')")
+    .hero__container.container.flex.flex_bottom
+      .hero__image
+        img(src="assets/images/content/hero-implemented-img.png", alt="")
+      .hero__w
+        h1.hero__title.title Где внедрена
+        .hero__text Уже работает в государственной сфере, энергетике, строительстве, дорожном хозяйстве, судостроении и нефтегазовой отрасли.
+
+
+mixin hero-support(data)
+  section.hero.lazy(data-bg="url('assets/images/general/waves.png')")
+    .hero__container.container.flex.flex_bottom
+      .hero__image
+        img(src="assets/images/content/hero-support-img.png", alt="")
+      .hero__w
+        h1.hero__title.title Поддержка
+        .hero__text Мы поможем обеспечить экономически обоснованный, гибкий и поэтапный переход с зарубежных технологий на отечественную платформу, полностью соответствующую требованиям регулятора.

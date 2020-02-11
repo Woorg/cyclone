@@ -2,14 +2,14 @@
   color: $blue
   &__container
     padding-top: 32px
-    padding-bottom: 32px
+    // padding-bottom: 32px
 
     +mq($small)
       padding-top: 50px
-      padding-bottom: 33px
+      // padding-bottom: 33px
 
   &__title
-    margin-bottom: 18px
+    margin-bottom: 24px
     +mq($small)
       margin-bottom: 57px
 
@@ -50,20 +50,23 @@
   &__text
     padding-left: 57px
     // padding-left: 24px
-    font-size: 18px
     font-weight: 400
-    line-height: 1.333
-
+    font-size: 14px
+    line-height: 1.428
     +mq($small)
       padding-left: 118px
+      font-size: 18px
+      line-height: 1.333
 
   &__bottom
     position: relative
     padding-top: 24px
+    padding-bottom: 33px
     flex-wrap: wrap
 
     +mq($small)
       padding-top: 15px
+      padding-bottom: 15px
       flex-wrap: nowrap
 
     &:after

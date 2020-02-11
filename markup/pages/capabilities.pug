@@ -8,10 +8,14 @@ html(class="no-js", lang="ru")
   include ../blocks/about/about.pug
 
   include ../blocks/capabilities/capabilities.pug
-  include ../blocks/functions/functions.pug
-  include ../blocks/partners/partners.pug
-  include ../blocks/import/import.pug
-  include ../blocks/feature/feature.pug
+  include ../blocks/benefits/benefits.pug
+  include ../blocks/advantages/advantages.pug
+  include ../blocks/mobile/mobile.pug
+
+  //- include ../blocks/functions/functions.pug
+  //- include ../blocks/partners/partners.pug
+  //- include ../blocks/import/import.pug
+  //- include ../blocks/feature/feature.pug
 
   include ../blocks/footer/footer.pug
 
@@ -22,14 +26,17 @@ html(class="no-js", lang="ru")
     +header()
     //- end header
     main.page__inner
-      +hero-functions()
-      +about()
-      //- +capabilities()
-      +functions-features()
-      +feature-first()
-      +feature-second()
-      +feature-third()
-      +feature-fourth()
+      +hero-capabilities()
+      //- +about()
+      +capabilities-second()
+      +benefits()
+      +advantages()
+      +mobile()
+      //- +functions-features()
+      //- +feature-first()
+      //- +feature-second()
+      //- +feature-third()
+      //- +feature-fourth()
 
 
       //- +feature-first()

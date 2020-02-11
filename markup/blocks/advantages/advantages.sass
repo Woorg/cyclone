@@ -1,0 +1,47 @@
+.advantages
+  color: $blue
+  &__container
+    padding-top: 32px
+    padding-bottom: 8px
+
+    +mq($small)
+      padding-top: 52px
+      padding-bottom: 42px
+
+  &__title
+    margin-bottom: 16px
+    +mq($small)
+      margin-bottom: 40px
+
+  &__text
+    margin-bottom: 32px
+    max-width: 920px
+    width: 100%
+    +mq($small)
+      margin-bottom: 55px
+
+  &__list
+    margin-bottom: 8px
+    flex-wrap: wrap
+    +mq($small)
+      margin-bottom: 55px
+      flex-wrap: nowrap
+  &__item
+    margin-bottom: 25px
+    max-width: 33.3%
+    width: 100%
+    font-size: 14px
+    line-height: 1.428
+    text-align: center
+    +mq($small)
+      margin-bottom: 0
+      max-width: 94px
+      font-size: 18px
+      line-height: 1.333
+
+  &__image
+    margin-bottom: 15px
+
+  &__note
+    max-width: 1000px
+    width: 100%

@@ -100,6 +100,7 @@ import Tabby from 'tabbyjs';
 
     if( $slider.length > 0 ) {
 
+
       $slider.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -162,6 +163,10 @@ import Tabby from 'tabbyjs';
     pageWidget([
       'index',
       'functions',
+      'capabilities',
+      'implemented',
+      'support'
+
 
     ]);
 

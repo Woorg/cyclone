@@ -1,0 +1,58 @@
+.implemented
+  color: $blue
+  &__container
+    padding-top: 32px
+    padding-bottom: 12px
+    border-bottom: 1px solid #5199ff
+    +mq($small)
+      padding-top: 52px
+      padding-bottom: 42px
+
+  &__grid
+    flex-wrap: wrap
+    margin-right: 0
+    margin-left: 0
+    +mq($small)
+      margin-right: -12px
+      margin-left: -12px
+
+  &__item
+    margin-bottom: 27px
+    width: 100%
+    display: flex
+    align-items: center
+    +mq($small)
+      margin-bottom: 72px
+      padding-left: 12px
+      padding-right: 12px
+      max-width: 50%
+
+    +mq($large)
+      max-width: 33.3%
+
+    &:last-child
+      margin-bottom: 0
+
+  &__image
+    margin-right: 36px
+    max-width: 100px
+    width: 100%
+    flex-shrink: 0
+    +mq($small)
+      max-width: 212px
+
+  &__list
+    flex-wrap: wrap
+
+  &__category
+    margin-bottom: 24px
+    margin-right: 24px
+    font-size: 14px
+    line-height: 1.428
+    +mq($small)
+      margin-bottom: 32px
+      width: 100%
+      display: block
+    &:last-child
+      margin-right: 0
+      margin-bottom: 0
