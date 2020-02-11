@@ -6,7 +6,8 @@
     padding-bottom: 32px
     +mq($small)
       padding-top: 64px
-      padding-bottom: 33px
+    +mq($large)
+      padding-bottom: 64px
 
   &__title
     margin-bottom: 24px
@@ -56,17 +57,19 @@
 
   &__text
     padding-left: 0
-    padding-bottom: 40px
-    max-width: 550px
     width: 100%
     font-size: 14px
     line-height: 1.428
     flex-shrink: 1
     +mq($small)
+      padding-bottom: 40px
       font-size: 18px
       line-height: 1.333
+    // +mq($medium)
 
     +mq($large)
+      max-width: 550px
+      padding-bottom: 0
       padding-left: 24px
 
     p
@@ -140,8 +143,11 @@
 
     .list__item
       margin-bottom: 24px
-      max-width: 470px
+      // max-width: 470px
+      max-width: 100%
       width: 100%
+      +mq($medium)
+        max-width: 50%
 
   &__button
     margin-left: auto

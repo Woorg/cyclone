@@ -1,9 +1,70 @@
 .nav
-  &__list
-    display: none
-    align-items: flex-start
+  // &_active
+  //   position: relative
+  //   z-index: 0
+  //   right: -15px
+  //   margin-right: 0
+
+  &__button
+    +resetbutton()
+    position: absolute
+    top: 50%
+    right: 15px
+    color: $white
+    transform: translateY(-50%)
+
+  &__button_active
+    .nav__menu
+      display: none
+      +tr(all .3s ease)
+      +mq($mlarge)
+        display: none
+
+    .nav__menu_close
+      display: inline
+      +tr(all .3s ease)
+      +mq($mlarge)
+        display: none
+    + .nav__list
+
+      padding-top: 50px
+      width: 100vw
+      height: 100vh
+      background: $blue
+      text-align: center
+      transform: translateX(0%)
+      +tr(transform .3s ease)
+
+      +mq($small)
+        padding-top: 50px
+
+  &__menu
+    display: inline
+    +tr(all .3s ease)
     +mq($mlarge)
+      display: none
+
+  &__menu_close
+    display: none
+    +tr(all .3s ease)
+    +mq($mlarge)
+      display: none
+
+
+  &__list
+    position: absolute
+    z-index: -1
+    // right: 0
+    top: calc(100% - 2px)
+    right: 0
+    // display: none
+    align-items: flex-start
+    transform: translateX(100%)
+    +tr(transform .3s ease)
+    +mq($mlarge)
+      position: static
       display: flex
+      transform: none
 
     // flex-wrap: nowrap
   // &__item

@@ -2,7 +2,16 @@ mixin hero(data)
   section.hero.lazy(data-bg="url('assets/images/general/waves.png')")
     .hero__container.container.flex.flex_bottom
       .hero__image
-        img(src="assets/images/general/hero-img.png", alt="")
+        img(src="assets/images/content/hero-img.png", alt="")
       .hero__w
         h1.hero__title.title Геоинформационная платформа «Циклон»
         .hero__text Предназначена для контроля за распределенными активами предприятий, поддержки принятия управленческих решений, бизнес-анализа и визуализации.
+
+mixin hero-functions(data)
+  section.hero.lazy(data-bg="url('assets/images/general/waves.png')")
+    .hero__container.container.flex.flex_bottom
+      .hero__image
+        img(src="assets/images/content/hero-functions-img.png", alt="")
+      .hero__w
+        h1.hero__title.title Функции
+        .hero__text Области применения платформы «Циклон» очень обширны. Они включают в себя различные сферы от энергетики и инфраструктуры до управленческой деятельности, обеспечения безопасности и управления недвижимостью.

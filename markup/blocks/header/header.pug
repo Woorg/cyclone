@@ -6,11 +6,15 @@ mixin header(data)
         != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__image'})
 
       nav.header__nav.nav
+        button.nav__button
+          != pugHelpers.Icon.call(locals, {iconName: 'menu-icon', className: 'nav__menu'})
+          != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'nav__menu nav__menu_close'})
+
         ul.nav__list
           li.nav__item.nav__item_active
-            a.nav__link(href="#") Обзор
+            a.nav__link(href="/index.html") Обзор
           li.nav__item
-            a.nav__link(href="#") Возможности
+            a.nav__link(href="/functions.html") Возможности
           li.nav__item
             a.nav__link(href="#") Функции
           li.nav__item

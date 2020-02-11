@@ -54,6 +54,29 @@ import Tabby from 'tabbyjs';
 
   $(function() {
 
+
+    // Nav
+
+    const $header = $('.header');
+    const $menuButton = $('.nav__button');
+
+    $menuButton.on('click', function (e) {
+      e.preventDefault();
+      $(this).toggleClass('nav__button_active');
+      $header.toggleClass('header_nav-active');
+
+    });
+
+    $(document).on('click', function(e) {
+      if (!$(e.target).closest('.nav__button_active').length) {
+        $header.removeClass('header_nav-active');
+        $menuButton.removeClass('nav__button_active');
+      }
+    });
+
+
+    // Tabs
+
     const tabs = new Tabby('[data-tabs]');
 
     $(window).resize(function () {
@@ -71,9 +94,7 @@ import Tabby from 'tabbyjs';
     }
 
 
-    /*
-    Slider
-    */
+    // Slider
 
     var $slider = $('.functions__w');
 
@@ -87,7 +108,6 @@ import Tabby from 'tabbyjs';
         mobileFirst: true,
         infinite: false,
 
-        // centerMode: true,
         fade: false,
         adaptiveHeight: true,
         speed: 100,
@@ -129,13 +149,6 @@ import Tabby from 'tabbyjs';
 
 
 
-
-
-
-
-
-
-
     function pageWidget(pages) {
       var widgetWrap = $('<div class="widget_wrap"><ul class="widget_list"></ul></div>');
       widgetWrap.prependTo("body");
@@ -148,6 +161,8 @@ import Tabby from 'tabbyjs';
 
     pageWidget([
       'index',
+      'functions',
+
     ]);
 
 

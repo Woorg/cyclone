@@ -1,0 +1,25 @@
+.about
+  color: $blue
+  &__container
+    padding-top: 32px
+    padding-bottom: 32px
+    +mq($small)
+      padding-top: 56px
+      padding-bottom: 56px
+  &__row
+    flex-wrap: wrap
+    +mq($small)
+      margin-right: -12px
+      margin-left: -12px
+  &__col
+    width: 100%
+    +mq($small)
+      padding-right: 12px
+      padding-left: 12px
+      max-width: 33.3%
+
+    p
+      &:last-child
+        +mq($small)
+          margin-bottom: 0
+
