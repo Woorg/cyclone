@@ -1,0 +1,58 @@
+.contacts
+  color: $blue
+  font-size: 14px
+  line-height: 1.428
+  +mq($small)
+    font-size: 18px
+    line-height: 1.33333333333333
+
+  &__container
+    border-bottom: 1px solid $blue
+    padding-top: 32px
+    padding-bottom: 32px
+    +mq($small)
+      padding-top: 52px
+      padding-bottom: 52px
+  &__top
+    padding-bottom: 20px
+    flex-wrap: wrap
+    +mq($small)
+      padding-bottom: 40px
+
+  &__col
+    margin-bottom: 24px
+    width: 100%
+    +mq($small)
+      max-width: 530px
+    +mq($medium)
+      margin-bottom: 0
+    &:last-child
+      margin-bottom: 0
+      margin-left: auto
+      text-align: right
+
+  &__contact
+    margin-bottom: 24px
+    display: block
+    +mq($medium)
+      margin-bottom: 0
+
+  &__link
+    color: $blue
+    &:hover
+      text-decoration: none
+
+  &__area
+    position: relative
+    min-height: 320px
+    overflow: hidden
+    +mq($small)
+      padding-top: 49%
+
+
+  &__map
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0

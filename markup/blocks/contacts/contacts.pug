@@ -1,0 +1,16 @@
+mixin contacts(data)
+  .contacts
+    .contacts__container.container
+      .contacts__top.flex.flex_top
+        .contacts__col
+          .contacts__contact Институт Географических Информационных Технологий
+          .contacts__contact Адрес: 199155, Санкт-Петербург, наб. реки Смоленки, 33
+
+        .contacts__col
+          .contacts__contact Телефон/факс:
+            a.contacts__link(href="tel:+78005005478") +7 (800) 500 54 78
+          .contacts__contact Почта:
+            a.contacts__link(href="mailto:info@igit.spb.ru") info@igit.spb.ru
+
+      .contacts__area
+        #map.contacts__map
