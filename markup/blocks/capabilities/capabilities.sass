@@ -1,0 +1,100 @@
+.capabilities
+  color: $blue
+  &__container
+    padding-top: 32px
+    padding-bottom: 32px
+
+    +mq($small)
+      padding-top: 50px
+      padding-bottom: 33px
+
+  &__title
+    margin-bottom: 18px
+    +mq($small)
+      margin-bottom: 57px
+
+
+  &__list
+    flex-wrap: wrap
+
+    +mq($small)
+      margin-right: -12px
+      margin-left: -12px
+
+
+  &__item
+    position: relative
+    margin-bottom: 26px
+    width: 100%
+
+    +mq($small)
+      margin-bottom: 80px
+      max-width: 50%
+
+    +mq($medium)
+      max-width: 33.3%
+      padding-right: 12px
+      padding-left: 12px
+
+  &__icon
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+
+    max-width: 40px
+    +mq($small)
+      left: 12px
+      max-width: 94px
+
+  &__text
+    padding-left: 57px
+    // padding-left: 24px
+    font-size: 18px
+    font-weight: 400
+    line-height: 1.333
+
+    +mq($small)
+      padding-left: 118px
+
+  &__bottom
+    position: relative
+    padding-top: 24px
+    flex-wrap: wrap
+
+    +mq($small)
+      padding-top: 15px
+      flex-wrap: nowrap
+
+    &:after
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      content: ""
+      height: 2px
+      background: #5199ff
+      +mq($small)
+        top: -27px
+
+
+  &__advantages
+    max-width: 944px
+    padding-left: 16px
+    width: 100%
+    +mq($small)
+      padding-left: 0
+    .list__item
+      max-width: 472px
+      width: 100%
+
+  &__button
+    margin-left: 0
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    +mq($small)
+      margin-left: auto
+      width: auto
+

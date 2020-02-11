@@ -1,0 +1,112 @@
+.flex
+  display: flex
+.flex_start
+  justify-content: flex-start
+
+.flex_vertical
+  align-items: center
+
+.flex_bottom
+  align-items: flex-end
+
+
+.title
+  font-size: 28px
+  font-weight: 600
+  line-height: 1.142
+  +mq($small)
+    font-size: 64px
+    line-height: 1.125
+
+.title_big
+  font-size: 24px
+  line-height: 1.333
+  +mq($small)
+    font-size: 48px
+    line-height: 1.166
+
+
+.list
+  flex-wrap: wrap
+  font-size: 16px
+  font-weight: 600
+  +mq($small)
+    font-size: 24px
+  &__item
+    position: relative
+    margin-bottom: 16px
+    padding-left: 41px
+    line-height: 1.25
+    +mq($small)
+      margin-bottom: 24px
+      padding-left: 47px
+      line-height: 1.333
+
+
+  &__icon
+    position: absolute
+    top: 50%
+    left: 0
+    color: $yellow
+    width: 24px
+    transform: translateY(-50%)
+    +mq($small)
+      top: 0
+      width: 32px
+      transform: none
+
+.link
+  color: inherit
+  text-decoration: none
+  @include tr(all .3s ease)
+
+
+
+.button
+  position: relative
+  @include resetbutton()
+  padding-top: 15px
+  padding-right: 100px
+  padding-bottom: 16px
+  padding-left: 100px
+  height: 48px
+  display: inline-block
+  vertical-align: middle
+  background-color: $yellow
+  color: $blue
+  font-size: 18px
+  font-weight: 600
+  line-height: 1
+  text-align: center
+  text-decoration: none
+  border-radius: 10px
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25)
+  +tr(all .3s ease)
+  +mq($small)
+    padding-top: 19px
+    height: 64px
+    font-size: 24px
+
+  &:hover
+    background: $yellow-light
+    +tr(all .3s ease)
+
+
+.wysiwyg
+  line-height: 1.33333333333333
+
+  p
+    margin-bottom: 16px
+    font-size: 14px
+    line-height: 1.428
+    +mq($small)
+      margin-bottom: 40px
+      font-size: 18px
+
+  i
+    font-size: 14px
+    line-height: 1.428
+    font-style: italic
+
+    +mq($small)
+      font-size: 24px

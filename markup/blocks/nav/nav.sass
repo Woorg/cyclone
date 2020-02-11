@@ -1,0 +1,39 @@
+.nav
+  &__list
+    display: none
+    align-items: flex-start
+    +mq($mlarge)
+      display: flex
+
+    // flex-wrap: nowrap
+  // &__item
+  //   &:last-child
+  //     .nav__link
+  //       padding-right: 0
+
+  &__item_active
+    .nav__link
+      background: $blue-active
+      &:hover
+        background: $blue-active
+
+
+
+  &__link
+    padding-top: 24px
+    padding-right: 38px
+    padding-bottom: 24px
+    padding-left: 38px
+    display: block
+    background: $blue
+    color: inherit
+    font-size: 18px
+    font-weight: 400
+    line-height: 1.333
+    text-decoration: none
+    // text-overflow: ellipsis
+    // white-space: nowrap
+    &:hover
+      background: $blue-hover
+
+

@@ -1,0 +1,151 @@
+.functions
+  background: $blue
+  color: $white
+  &__container
+    padding-top: 32px
+    padding-bottom: 32px
+    +mq($small)
+      padding-top: 64px
+      padding-bottom: 33px
+
+  &__title
+    margin-bottom: 24px
+
+    +mq($small)
+      margin-bottom: 49px
+
+  &__tabs
+    // margin-bottom: 38px
+    color: $white
+    flex-wrap: wrap
+    +mq($small)
+      flex-wrap: nowrap
+
+  &__w
+    width: 100%
+    flex-wrap: wrap
+    flex-shrink: 0
+    +mq($small)
+      padding-right: 24px
+      // max-width: 1062px
+      // max-width: 76%
+      max-width: 74.2%
+      flex-shrink: 1
+      flex-wrap: nowrap
+
+
+  &__content
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    +mq($large)
+      flex-wrap: nowrap
+
+  &__image
+    margin-bottom: 24px
+    flex-shrink: 0
+    flex-grow: 1
+    width: 100%
+    +mq($small)
+      margin-bottom: 24px
+
+    +mq($large)
+      max-width: 448px
+
+
+
+  &__text
+    padding-left: 0
+    padding-bottom: 40px
+    max-width: 550px
+    width: 100%
+    font-size: 14px
+    line-height: 1.428
+    flex-shrink: 1
+    +mq($small)
+      font-size: 18px
+      line-height: 1.333
+
+    +mq($large)
+      padding-left: 24px
+
+    p
+      &:last-child
+        margin-bottom: 0
+
+  &__nav-w
+    // margin-right: -30px
+    // margin-left: -15px
+    padding-top: 24px
+    padding-bottom: 24px
+    max-width: 100%
+    width: 100%
+    +mq($small)
+      margin-right: 0
+      margin-left: 0
+      padding-bottom: 0
+      max-width: 328px
+    // +mq($large)
+    //   margin-right: 0
+    //   margin-left: 0
+
+  &__nav
+    .slick-track
+      +mq($small)
+        transform: translate3d(0px, 0px, 0px)!important
+
+    .slick-list
+      margin-right: -15px
+      margin-left: -15px
+      padding: 0 !important
+
+  .slick-dotted.slick-slider
+    margin-bottom: 0
+    padding-bottom: 40px
+  .slick-dots
+    bottom: -10px
+    border: none
+    li,
+    button,
+    &:before
+      width: 10px
+      height: 10px
+      text-indent: -9999px
+
+    button
+      overflow: hidden
+      border-radius: 50%
+      &:before
+        width 8px
+        height 8px
+        border 1px solid $white
+
+    .slick-active
+      button
+        &:before
+          background: $white
+
+
+  &__bottom
+    border-top: 2px solid $white
+    padding-top: 40px
+    flex-wrap: wrap
+    +mq($small)
+      flex-wrap: nowrap
+
+  &__list
+    max-width: 940px
+    width: 100%
+
+
+    .list__item
+      margin-bottom: 24px
+      max-width: 470px
+      width: 100%
+
+  &__button
+    margin-left: auto
+    width: 100%
+    +mq($small)
+      width: auto
+

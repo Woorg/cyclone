@@ -1,0 +1,109 @@
+.footer
+  color: $blue
+  font-size: 14px
+  line-height: 1.428
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25)
+  +mq($small)
+    font-size: 18px
+  &__container
+    padding-top: 25px
+    padding-bottom: 25px
+    flex-wrap: wrap
+
+    +mq($small)
+      padding-top: 50px
+      padding-bottom: 50px
+
+  &__col
+    width: 100%
+    display: flex
+    justify-content: center
+    +mq($medium)
+      max-width: 33.3%
+
+  &__col_logo
+    order: 0
+    +mq($medium)
+      order: 0
+      justify-content: flex-start
+
+  &__col_address
+    order: 1
+    +mq($medium)
+      order: 3
+
+  &__col_email
+    +mq($medium)
+      justify-content: flex-end
+
+  &__col_address,
+  &__col_phone,
+  &__col_email
+    +mq($medium)
+      padding-top: 64px
+
+
+  &__col_email
+    order: 2
+    +mq($medium)
+      order: 5
+
+  &__col_phone
+    order: 3
+
+    +mq($medium)
+      order: 4
+
+  &__col_created
+    order: 4
+    justify-content: center
+    +mq($medium)
+      order: 2
+      justify-content: flex-end
+
+  &__col_copy
+    order: 5
+    +mq($medium)
+      order: 1
+
+
+  &__copyright
+    margin-right: auto
+    margin-left: auto
+    max-width: 715px
+    width: 100%
+    text-align: center
+    line-height: 1.333
+
+  &__created
+    margin-left: 0
+    max-width: 73px
+    +mq($medium)
+      margin-left: auto
+      max-width: 139px
+
+
+  &__address
+    margin-bottom: 14px
+    line-height: 1.333
+    +mq($medium)
+      margin-bottom: 0
+
+
+
+  &__phone
+    margin-right: auto
+    margin-left: auto
+    max-width: 250px
+    width: 100%
+    text-align: center
+    color: $blue
+    text-decoration: none
+
+
+  &__email
+    // margin-left: auto
+    color: $blue
+    text-decoration: none
+
+

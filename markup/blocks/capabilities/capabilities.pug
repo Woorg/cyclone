@@ -1,0 +1,60 @@
+mixin capabilities(data)
+  section.capabilities
+    .capabilities__container.container
+      h2.capabilities__title.title.title_big ГИС «Циклон» позволяет
+      ul.capabilities__list.flex.flex_top
+        li.capabilities__item.flex.flex_vertical
+          != pugHelpers.Icon.call(locals, {iconName: 'capable-1', className: 'capabilities__icon', iconWidth: '94', iconHeight: '94'})
+          .capabilities__text Поддерживать целостность пространственных данных
+
+        li.capabilities__item.flex.flex_vertical
+          != pugHelpers.Icon.call(locals, {iconName: 'capable-2', className: 'capabilities__icon', iconWidth: '94', iconHeight: '94'})
+          .capabilities__text Применять специальные правила к данным
+
+        li.capabilities__item.flex.flex_vertical
+          != pugHelpers.Icon.call(locals, {iconName: 'capable-3', className: 'capabilities__icon', iconWidth: '94', iconHeight: '94'})
+          .capabilities__text Хранить разнородные пространственные данные в едином хранилище
+
+        li.capabilities__item.flex.flex_vertical
+          != pugHelpers.Icon.call(locals, {iconName: 'capable-4', className: 'capabilities__icon', iconWidth: '94', iconHeight: '94'})
+          .capabilities__text Работать с данными в режиме многопользовательского доступа и редактирования
+
+        li.capabilities__item.flex.flex_vertical
+          != pugHelpers.Icon.call(locals, {iconName: 'capable-5', className: 'capabilities__icon', iconWidth: '94', iconHeight: '94'})
+          .capabilities__text Интегрировать пространственные данные с другими ИТ-системами
+
+        li.capabilities__item.flex.flex_vertical
+          != pugHelpers.Icon.call(locals, {iconName: 'capable-6', className: 'capabilities__icon', iconWidth: '94', iconHeight: '94'})
+          .capabilities__text Определять пространственные модели отношений (топологию, геометрические сети)
+
+        li.capabilities__item.flex.flex_vertical
+          != pugHelpers.Icon.call(locals, {iconName: 'capable-7', className: 'capabilities__icon', iconWidth: '94', iconHeight: '94'})
+          .capabilities__text Легко масштабировать решение по хранению данных
+
+        li.capabilities__item.flex.flex_vertical
+          != pugHelpers.Icon.call(locals, {iconName: 'capable-8', className: 'capabilities__icon', iconWidth: '94', iconHeight: '94'})
+          .capabilities__text Максимально эффективно использовать имеющиеся пространственные данные
+
+        li.capabilities__item.flex.flex_vertical
+          != pugHelpers.Icon.call(locals, {iconName: 'capable-9', className: 'capabilities__icon', iconWidth: '94', iconHeight: '94'})
+          .capabilities__text Контролировать текущее состояние всех объектов
+
+      .capabilities__bottom.flex.flex_top
+        ul.capabilities__advantages.list.flex.flex_top
+          li.list__item.flex.flex_top
+            != pugHelpers.Icon.call(locals, {iconName: 'list-icon', className: 'list__icon', iconWidth: '32', iconHeight: '32'})
+            .list__text Удобство использования
+
+          li.list__item.flex.flex_top
+            != pugHelpers.Icon.call(locals, {iconName: 'list-icon', className: 'list__icon', iconWidth: '32', iconHeight: '32'})
+            .list__text Функциональные преимущества
+          li.list__item.flex.flex_top
+            != pugHelpers.Icon.call(locals, {iconName: 'list-icon', className: 'list__icon', iconWidth: '32', iconHeight: '32'})
+            .list__text Мобильная версия
+          li.list__item.flex.flex_top
+            != pugHelpers.Icon.call(locals, {iconName: 'list-icon', className: 'list__icon', iconWidth: '32', iconHeight: '32'})
+            .list__text Встраивание в инфраструктуру и масштабирование
+
+        a.capabilities__button.button(href="#button") Подробнее
+
+

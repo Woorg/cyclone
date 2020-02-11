@@ -1,0 +1,22 @@
+mixin footer(data)
+  footer.footer
+    .footer__container.container.flex.flex_vertical
+      .footer__col.footer__col_logo
+        .footer__logo.logo.logo_second
+          .logo__text Циклон
+          != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__image'})
+
+      .footer__col.footer__col_copy
+        .footer__copyright © 2019 «Институт Географических <br/>Информационных Технологий»
+
+      .footer__col.footer__col_created
+        != pugHelpers.Icon.call(locals, {iconName: 'igit', className: ' footer__created', iconWidth: '139'})
+
+      .footer__col.footer__col_address
+        .footer__address 199155, Санкт-Петербург, наб. реки Смоленки, 33
+
+      a.footer__col.footer__col_phone
+        .footer__phone(href="tel:+78005005478") +7 800 500 54 78
+
+      a.footer__col.footer__col_email
+        .footer__email(href="mailto:info@igit.spb.ru") info@igit.spb.ru

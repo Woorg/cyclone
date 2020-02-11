@@ -1,0 +1,86 @@
+.tabs
+  &__nav
+    border: none
+  &__item
+    margin-bottom: 16px
+
+  [role=tab]
+    position: relative
+    border: none
+    background-color: $blue
+    color: $white
+    font-size: 18px
+    line-height: 1.333
+    +tr(all .3s ease)
+
+    &:after
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      border: 1px solid $white
+      display: flex
+      justify-content: center
+      align-items: center
+      content: ""
+      border-radius: 10px
+
+    &:last-child
+      margin-bottom: 0
+    &:hover
+      border: none
+      background: transparent
+      +tr(all .3s ease)
+      &:after
+        top: -1px
+
+        border: 2px solid $white
+
+  [role=tab][aria-selected=true],
+    color: $blue
+    &:after
+      top: -1px
+      border: 1px solid $white
+      background-color: $white
+      color: $blue
+      content: attr(data-text)
+    // &:hover
+    //   border: 1px solid $white
+
+  &__link
+    white-space: nowrap
+
+  .slick-slide
+    .tabs__link
+      position: relative
+      padding-top: 10px
+      padding-bottom: 10px
+      padding-left: 16px
+      padding-right: 16px
+      display: block
+      color: $white
+      font-size: 14px
+      line-height: 1
+      text-decoration: none
+
+  .slick-current
+    .tabs__link
+      &:after
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        border: 1px solid #ffffff
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $white
+        color: $blue
+        border-radius: 10px
+        +tr(all .3s ease)
+        color: $blue
+        content: attr(data-text)
+
+

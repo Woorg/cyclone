@@ -1,0 +1,21 @@
+mixin header(data)
+  header.header
+    .header__container.container.flex
+      a.header__logo.logo(href="#")
+        .logo__text Циклон
+        != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__image'})
+
+      nav.header__nav.nav
+        ul.nav__list
+          li.nav__item.nav__item_active
+            a.nav__link(href="#") Обзор
+          li.nav__item
+            a.nav__link(href="#") Возможности
+          li.nav__item
+            a.nav__link(href="#") Функции
+          li.nav__item
+            a.nav__link(href="#") Где внедрена
+          li.nav__item
+            a.nav__link(href="#") Поддержка
+          li.nav__item
+            a.nav__link(href="#") Контакты

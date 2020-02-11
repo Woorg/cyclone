@@ -1,0 +1,64 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../blocks/head/head.pug
+  include ../blocks/header/header.pug
+
+  include ../blocks/hero/hero.pug
+  include ../blocks/capabilities/capabilities.pug
+  include ../blocks/functions/functions.pug
+  include ../blocks/partners/partners.pug
+  include ../blocks/import/import.pug
+
+  include ../blocks/footer/footer.pug
+
+  head
+    +head(head.defaults)
+  body.page
+    |%=symbols=%
+    +header()
+    //- end header
+    main.page__inner
+      +hero()
+      +capabilities()
+      +functions()
+      +partners()
+      +import()
+
+    .page__footer
+      +footer()
+      //- +popup()#callback.mfp-hide
+      //- +popup-thanks()#callback-thanks.mfp-hide
+
+    //- script(src="https://api-maps.yandex.ru/2.1/?apikey=d491e610-d9d0-4022-9b4c-e2d184cf5425&lang=ru_RU")
+    script(src='%=static=%js/separate-js/lazyload.min.js' )
+    script(src='%=static=%js/separate-js/jquery.min.js')
+    script(src='%=static=%js/separate-js/slick.min.js')
+    //- script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js')
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
+
+  //- script.
+  //-   ymaps.ready(init);
+
+  //-   function init() {
+  //-     var myMap = new ymaps.Map('map', {
+  //-       center: [55.720418, 37.772047],
+  //-       zoom: 17,
+  //-       controls: ['']
+  //-     }, {
+  //-           searchControlProvider: ''
+  //-       });
+
+  //-     var myPlacemark = new ymaps.Placemark(
+  //-       [55.720418, 37.772047], {
+  //-           balloonContent: '109428, Город Москва, Рязанский проспект, дом 26, строение 13, эт 3 пом 1 ком 13'
+  //-       }, {
+  //-           //- iconLayout: 'default#image',
+  //-           //- iconImageHref: 'assets/images/general/marker.png',
+  //-           //- iconImageSize: [14, 19],
+  //-       }
+  //-     );
+
+  //-     myMap.geoObjects.add(myPlacemark);
+
+  //-   }
