@@ -1,0 +1,16 @@
+mixin support(data)
+  .support
+    .support__container.container
+      form(action="", method="post").support__form.form.flex.flex_top
+        .form__col.form__col_wide
+          .form__field
+            textarea.form__textarea(name="", placeholder="Напишите свой вопрос, оставьте контактые данные и мы ответим в ближайшее время.")
+        .form__col
+          .form__field
+            input.form__input(type="text", name="name", value="", placeholder="Имя")
+          .form__field
+            input.form__input(type="text", name="email", value="", placeholder="Почта")
+          .form__field
+            input.form__input(type="text", name="phone", value="", placeholder="Телефон")
+          .form__field
+            input.form__submit.button(type="submit", value="Отправить")

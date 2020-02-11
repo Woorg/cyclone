@@ -1,0 +1,51 @@
+.form
+  flex-wrap: wrap
+
+  &__col
+    width: 100%
+    +mq($small)
+      width: auto
+    // width: 100%
+  &__col_wide
+    // max-width: 1037px
+    flex-grow: 1
+    +mq($small)
+      margin-right: 24px
+      max-width: 74%
+
+  &__field
+    margin-bottom: 16px
+    display: flex
+    // &:last-of-type
+      // margin-bottom: 0
+
+
+  &__textarea,
+  &__input
+    +resetbutton()
+    border: 1px solid $blue
+    flex-grow: 1
+    font-size: 14px
+    font-weight: 400
+    color: $blue
+    border-radius: 10px
+    line-height: 1.333
+    +placeholder()
+      color: $blue
+    +mq($small)
+      font-size: 18px
+
+  &__textarea
+    padding-top: 16px
+    padding-right: 24px
+    padding-bottom: 16px
+    padding-left: 24px
+    min-height: 280px
+
+  &__input
+    padding-right: 24px
+    padding-left: 24px
+    height: 56px
+
+  &__submit
+    width: 100%

@@ -5,6 +5,8 @@ html(class="no-js", lang="ru")
   include ../blocks/header/header.pug
 
   include ../blocks/hero/hero.pug
+  include ../blocks/support/support.pug
+
   //- include ../blocks/about/about.pug
 
   //- include ../blocks/capabilities/capabilities.pug
@@ -28,6 +30,7 @@ html(class="no-js", lang="ru")
     //- end header
     main.page__inner
       +hero-support()
+      +support()
       //- +implemented()
       //- +about()
       //- +capabilities-second()

@@ -2,7 +2,7 @@
   color: $blue
   &__container
     padding-top: 32px
-    padding-bottom: 12px
+    padding-bottom: 32px
     border-bottom: 1px solid #5199ff
     +mq($small)
       padding-top: 52px
@@ -39,20 +39,39 @@
     width: 100%
     flex-shrink: 0
     +mq($small)
+      max-width: 160px
+    +mq($medium)
       max-width: 212px
 
   &__list
     flex-wrap: wrap
+    font-size: 0
 
   &__category
-    margin-bottom: 24px
-    margin-right: 24px
+    margin-bottom: 8px
+    margin-right: 8px
+    // width: auto
+    display: inline-block
+    vertical-align: top
     font-size: 14px
-    line-height: 1.428
+    line-height: 1
     +mq($small)
-      margin-bottom: 32px
+      margin-bottom: 16px
+    +mq($medium)
       width: 100%
-      display: block
+      font-size: 18px
     &:last-child
       margin-right: 0
       margin-bottom: 0
+
+  &__tag
+    border: 1px solid $blue
+    padding-top: 8px
+    padding-right: 8px
+    padding-bottom: 8px
+    padding-left: 8px
+    display: inline-block
+    border-radius: 10px
+    +mq($small)
+      padding-right: 16px
+      padding-left: 16px

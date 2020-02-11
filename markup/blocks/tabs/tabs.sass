@@ -54,6 +54,8 @@
   .slick-slide
     .tabs__link
       position: relative
+      margin-right: 8px
+      border: 1px solid #ffffff
       padding-top: 10px
       padding-bottom: 10px
       padding-left: 16px
@@ -63,6 +65,7 @@
       font-size: 14px
       line-height: 1
       text-decoration: none
+      border-radius: 10px
 
   .slick-current
     .tabs__link
@@ -74,13 +77,12 @@
         bottom: 0
         border: 1px solid #ffffff
         display: flex
+        content: attr(data-text)
         align-items: center
         justify-content: center
         background-color: $white
         color: $blue
         border-radius: 10px
         +tr(all .3s ease)
-        color: $blue
-        content: attr(data-text)
 
 
